@@ -1,0 +1,13 @@
+$(document).ready(function(){
+			$("div.block").mouseenter(function(){
+				$(this).find(".content").animate({top:"-=120px"});
+				$(this).find(".projectDescription").fadeIn(500);
+				$(this).find(".projectDescription").show(0);
+				});
+			$("div.block").mouseleave(function(){
+				$(this).find(".content").animate({top:"+=10px"});
+				$(this).find(".content").animate({top:"+=110px"});
+				$(this).find(".projectDescription").fadeOut(400);
+				$(this).find(".projectDescription").hide(0);
+				});
+			});

@@ -1,0 +1,93 @@
+body,html{
+	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family:Monotype Baskerville W01 Calibri; 
+}
+
+.topNavigation {
+	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;
+}
+
+.topNavigation .logo p{
+	float: left;vertical-align: middle;margin:15px 0px;
+}
+
+.topNavigation ul{
+	list-style-type: none;float:right;display:inline-block;margin:15px 0px;
+}
+
+.topNavigation li{
+	margin:0 10px;
+}
+
+.topNavigation li:hover{
+	text-decoration:underline;
+}
+
+.contentBox{
+	max-width:1024px;margin:0 auto;
+}
+
+.titleBox{
+	background-color: ;height:350px;margin-top:60px; width:100%;box-sizing:border-box;  padding: 0 60px;border:15px solid #FFFFFF; background-color: #222222;
+}
+
+.titleBox h1{
+	color:#FFFFFF;vertical-align: middle;line-height: 300px;font-size: 35px;
+}
+.projectList .block{
+	width:33.33%;height: 400px;float:left;box-sizing:border-box; border:15px solid #FFFFFF; overflow-y: hidden; -webkit-transition: background-color 0.5s; transition: background-color 0.7s;
+}
+.projectList .block:nth-child(5n+1){
+	background-color:#FF6633; color: #222222;
+}
+.projectList .block:nth-child(5n+2){
+	background-color:#20D5FB; color: #222222; 
+}
+.projectList .block:nth-child(5n+3){
+	background-color:#B3D49D; color: #222222;
+}
+.projectList .block:nth-child(5n+4){
+	background-color:#DE781B; color: #222222;
+}
+.projectList .block:nth-child(5n+5){
+	background-color:#FBEE4E; color: #222222;
+}
+.projectList .block:hover{
+	background-color:#FFCC99;
+}
+
+.projectList .block#sectionTitle{
+	background-color: darkred; color: #FFFFFF; vertical-align: middle;line-height: 350px;text-align:center;
+}
+.projectList .block .content{
+	padding:20px;position:relative;
+}
+
+.projectList .block .content h2,h3{
+	text-align: center;margin:0px;
+}
+.projectList .block .content .projectName{
+	margin-top:120px; 
+}
+.projectList .block .projectRemark{
+	font-weight:700;font-size: 14px; 
+}
+
+.projectList .block a{
+	color:black;
+}
+
+.projectList .block a:hover{
+	color: darkred;
+}
+
+.projectList .block .projectDescription{
+	display: none;
+}
+
+.show {
+	display:block;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
