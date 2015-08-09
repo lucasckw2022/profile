@@ -6,9 +6,10 @@
 	    <link rel="stylesheet" href="css/style.css">
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	    <script type="text/javascript" src="js/main.js"></script>
-	    <script>
-	    
-	</script>
+	    <style>
+	    @media screen and (max-width: 320px) {
+	.projectList .block{color:red;}}
+	</style>
 	</head>
 	<body>
 		<nav class="topNavigation">
@@ -16,13 +17,14 @@
 				<p>Lucas Cheung</p>
 			</div>
 			<ul class="menu">
-				<li><a href="#sectionTitle">Project</a><li>
+				<li><a href="#project">Project</a><li>
 			</ul>
 		</nav>
 		<div class="contentBox">
 			<div class="titleBox">
 				<h1>Welcome</h1>
 			</div>
+			<div id="project" />
 			<div class="projectList">
 				<div class="block" id="sectionTitle">
 					<div>
@@ -35,15 +37,20 @@
 						<h2>International Finance Centre</h2>
 						<h3>IC Magazine</h3>
 						</div>
+						<div class="projectIcon">
+							<img src="image/project_icon/ifc.jpg" alt="ifc"/>
+						</div>
 						<div class="projectDescription">
-							<p>An E-Magazine for IFC Mall which launch every 2 quaters.</p>
+							<p>An E-Magazine for IFC Mall which launches every 2 quaters.</p>
 							<p>Experience:
 								<ul>
 									<li>Update and create the pages following layout(hmtl,CSS)</li>
 									<li>Project Management</li>
 								</ul>
 							</p>
-							<a href="http://ifc.com.hk/ic" target="_blank" class="projectRemark">Reference Link</a>
+							<div class="projectRemark">
+							<a href="http://ifc.com.hk/ic" target="_blank">Reference Link</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -53,15 +60,19 @@
 							<h2>Hong Kong Jockey Club</h2>
 							<h3>iBadges</h3>
 						</div>
+						<div class="projectIcon">
+						</div>
 						<div class="projectDescription">
-							<p>An iPad application for its monthly members' magazine</p>
+							<p>An iPad application for its monthly members' magazine.</p>
 							<p>Experience:
 								<ul>
-									<li>Content Input (hmtl)</li>
+									<li>Content Management(hmtl)</li>
 									<li>Project Management</li>
 								</ul>
 							</p>
-							<a href="https://itunes.apple.com/hk/app/hkjc-badges/id619621489?mt=8" target="_blank" class="projectRemark">Reference Link</a>
+							<div class="projectRemark">
+								<a href="https://itunes.apple.com/hk/app/hkjc-badges/id619621489?mt=8" target="_blank" >Reference Link</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -71,14 +82,19 @@
 							<h2>Chow Sang Sang</h2>
 							<h3>Corporate Site</h3>
 						</div>
+						<div class="projectIcon">
+							<img src="image/project_icon/css.jpg" alt="chowsangsang"/>
+						</div>
 						<div class="projectDescription">
-							<p>Chow Sang Sang Corporate site which showcases its jewellery</p>
+							<p>Chow Sang Sang Corporate site which showcases its jewellery.</p>
 							<p>Experience:
 								<ul>
-									<li>Content Input (CMS)</li>
+									<li>Content Management(CMS)</li>
 								</ul>
 							</p>
-							<a href="http://www.chowsangsang.com" target="_blank" class="projectRemark">Reference Link</a>
+							<div class="projectRemark">
+								<a href="http://www.chowsangsang.com" target="_blank">Reference Link</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -88,65 +104,41 @@
 							<h2>LANDMARK Hong Kong‎</h2>
 							<h3>Art Campaign Site</h3>
 						</div>
+						<div class="projectIcon">
+							
+						</div>
 						<div class="projectDescription">
-							<p>A campaign site for Art Campaign: Be Inspired in Central</p>
+							<p>A campaign site for Art Campaign: Be Inspired in Central.</p>
 							<p>Experience:
 								<ul>
 									<li>Project Management</li>
 								</ul>
 							</p>
-							<p class="projectRemark">Site launched: 12th to 31st March 2015</p>
+							<div class="projectRemark">
+								<p>Site launched: 12th to 31st March 2015</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="block">
 					<div class="content">
 						<div class="projectName">
-							<h2>LANDMARK Hong Kong‎</h2>
-							<h3>Art Campaign Site</h3>
+							<h2>Friso</h2>
+							<h3>Corporate Site</h3>
+						</div>
+						<div class="projectIcon">
+							<img src="image/project_icon/friso.jpg" alt="friso"/>
 						</div>
 						<div class="projectDescription">
-							<p>A campaign site for Art Campaign: Be Inspired in Central</p>
+							<p>Friso's coporate website which providing both company's and product's information.</p>
 							<p>Experience:
 								<ul>
 									<li>Project Management</li>
 								</ul>
 							</p>
-							<p class="projectRemark">Site launched: 12th to 31st March 2015</p>
-						</div>
-					</div>
-				</div>
-				<div class="block">
-					<div class="content">
-						<div class="projectName">
-							<h2>LANDMARK Hong Kong‎</h2>
-							<h3>Art Campaign Site</h3>
-						</div>
-						<div class="projectDescription">
-							<p>A campaign site for Art Campaign: Be Inspired in Central</p>
-							<p>Experience:
-								<ul>
-									<li>Project Management</li>
-								</ul>
-							</p>
-							<p class="projectRemark">Site launched: 12th to 31st March 2015</p>
-						</div>
-					</div>
-				</div>
-				<div class="block">
-					<div class="content">
-						<div class="projectName">
-							<h2>LANDMARK Hong Kong‎</h2>
-							<h3>Art Campaign Site</h3>
-						</div>
-						<div class="projectDescription">
-							<p>A campaign site for Art Campaign: Be Inspired in Central</p>
-							<p>Experience:
-								<ul>
-									<li>Project Management</li>
-								</ul>
-							</p>
-							<p class="projectRemark">Site launched: 12th to 31st March 2015</p>
+							<div class="projectRemark">
+								<a href="http://www.chowsangsang.com" target="_blank">Reference Link</a>
+							</div>
 						</div>
 					</div>
 				</div>

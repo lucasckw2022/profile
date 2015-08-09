@@ -1,13 +1,12 @@
 $(document).ready(function(){
 			$("div.block").mouseenter(function(){
-				$(this).find(".content").animate({top:"-=120px"});
-				$(this).find(".projectDescription").fadeIn(500);
-				$(this).find(".projectDescription").show(0);
+				$(this).find(".projectName").slideUp();
+				$(this).find(".projectDescription").delay(300).fadeIn(500);
+				$(this).find(".projectIcon img").delay(300).fadeIn(500);
 				});
 			$("div.block").mouseleave(function(){
-				$(this).find(".content").animate({top:"+=10px"});
-				$(this).find(".content").animate({top:"+=110px"});
+				$(this).find(".projectName").delay(400).slideDown();
 				$(this).find(".projectDescription").fadeOut(400);
-				$(this).find(".projectDescription").hide(0);
+				$(this).find(".projectIcon img").fadeOut(500);
 				});
 			});

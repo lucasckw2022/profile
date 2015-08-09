@@ -21,6 +21,13 @@ body,html{
 .topNavigation li:hover{
 	text-decoration:underline;
 }
+.menu a{
+	text-decoration: none; color:black;
+}
+
+.menu a:hover{
+	text-decoration: none; color:orange;
+}
 
 .contentBox{
 	max-width:1024px;margin:0 auto;
@@ -59,16 +66,20 @@ body,html{
 	background-color: darkred; color: #FFFFFF; vertical-align: middle;line-height: 350px;text-align:center;
 }
 .projectList .block .content{
-	padding:20px;position:relative;
+	padding:20px;position:relative;text-align: center;
 }
 
 .projectList .block .content h2,h3{
 	text-align: center;margin:0px;
 }
-.projectList .block .content .projectName{
-	margin-top:120px; 
+
+.projectList .block p,li{
+	font-weight:700;font-size: 30px; 
 }
-.projectList .block .projectRemark{
+.projectList .block .content .projectName{
+	margin-top:120px; position:relative;padding-bottom: 10px;
+}
+.projectList .block p,li,.projectRemark{
 	font-weight:700;font-size: 14px; 
 }
 
@@ -77,17 +88,23 @@ body,html{
 }
 
 .projectList .block a:hover{
-	color: darkred;
+	color: orange;
+}
+.projectList .block .projectIcon{
+	display:inline;
+}
+.projectList .block .projectIcon img{
+	width:80%;position:relative; display:none;border: 3px solid #555555;
 }
 
 .projectList .block .projectDescription{
-	display: none;
+	display: none;text-align: left;
 }
 
 .show {
 	display:block;
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 320px) {
+	.projectList .block {width:100%;}
 }
