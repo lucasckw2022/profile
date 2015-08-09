@@ -11,7 +11,7 @@ body,html{
 }
 
 .topNavigation ul{
-	list-style-type: none;float:right;display:inline-block;margin:15px 0px;
+	list-style-type: none;float:right;display:inline-block;margin:20px 0px;
 }
 
 .topNavigation li{
@@ -105,6 +105,14 @@ body,html{
 	display:block;
 }
 
+@media screen and (max-width: 768px) {
+	.topNavigation .menu{margin:20px 0px ;font-size:20px;}
+	.projectList .block {width:100%;height:450px;border:0px;}
+	.projectList .block .projectIcon img{width:50%;}
+	.titleBox {border:0px;}
+}
+
 @media screen and (max-width: 320px) {
-	.projectList .block {width:100%;}
+	.projectList .block {width:100%;height:400px;}
+	.projectList .block .projectIcon img{width:80%;}
 }
