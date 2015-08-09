@@ -2,6 +2,14 @@ body,html{
 	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family:Monotype Baskerville W01 Calibri; 
 }
 
+a{
+	text-decoration: none; color:black;
+}
+
+a:hover{
+	text-decoration: none; color:orange;
+}
+
 .topNavigation {
 	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;
 }
@@ -10,23 +18,16 @@ body,html{
 	float: left;vertical-align: middle;margin:15px 0px;
 }
 
-.topNavigation ul{
-	list-style-type: none;float:right;display:inline-block;margin:20px 0px;
+.topNavigation .menu{
+	list-style-type: none;float:right;margin:15px 0px;
 }
 
 .topNavigation li{
-	margin:0 10px;
+	margin:0 10px;display:inline-block;
 }
 
 .topNavigation li:hover{
 	text-decoration:underline;
-}
-.menu a{
-	text-decoration: none; color:black;
-}
-
-.menu a:hover{
-	text-decoration: none; color:orange;
 }
 
 .contentBox{
@@ -38,7 +39,10 @@ body,html{
 }
 
 .titleBox h1{
-	color:#FFFFFF;vertical-align: middle;line-height: 300px;font-size: 35px;
+	color:#FFFFFF;padding-top:50px;/*line-height: 300px;*/font-size: 35px;
+}
+.titleBox p{
+	font-size: 20px;color:#FFFFFF;
 }
 .projectList .block{
 	width:33.33%;height: 400px;float:left;box-sizing:border-box; border:15px solid #FFFFFF; overflow-y: hidden; -webkit-transition: background-color 0.5s; transition: background-color 0.7s;
@@ -84,12 +88,9 @@ body,html{
 }
 
 .projectList .block a{
-	color:black;
+	color:black;text-decoration: underline;
 }
 
-.projectList .block a:hover{
-	color: orange;
-}
 .projectList .block .projectIcon{
 	display:inline;
 }
@@ -101,12 +102,12 @@ body,html{
 	display: none;text-align: left;
 }
 
-.show {
-	display:block;
+.mobile {
+	display: none;
 }
 
 @media screen and (max-width: 768px) {
-	.topNavigation .menu{margin:20px 0px ;font-size:20px;}
+	.topNavigation .menu{font-size:20px;}
 	.projectList .block {width:100%;height:450px;border:0px;}
 	.projectList .block .projectIcon img{width:50%;}
 	.titleBox {border:0px;}
@@ -115,4 +116,9 @@ body,html{
 @media screen and (max-width: 479px) {
 	.projectList .block {width:100%;height:400px;}
 	.projectList .block .projectIcon img{width:80%;}
+	.mobile{display: block;float:left;margin: 15px 0px;float:right;}
+	li{margin-right:0px;}
+	.topNavigation .menu{display: none;}
+	.titleBox{height:400px;}
+
 }
