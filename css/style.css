@@ -1,21 +1,31 @@
 body,html{
-	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family:Monotype Baskerville W01 Calibri; 
+	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family: 'Architects Daughter', cursive;
+}
+p{
+	margin:0;padding:0;
+}
+a{
+	text-decoration: none; color:black;
+}
+
+a:hover{
+	text-decoration: none; color:orange;
 }
 
 .topNavigation {
-	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;
+	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;max-width:1024px;margin:0 auto;
 }
 
 .topNavigation .logo p{
-	float: left;vertical-align: middle;margin:15px 0px;
+	float: left;vertical-align: middle;margin:15px 0px;margin-left: 30px;
 }
 
-.topNavigation ul{
-	list-style-type: none;float:right;display:inline-block;margin:15px 0px;
+.topNavigation .menu{
+	list-style-type: none;float:right;margin:15px 0px;
 }
 
 .topNavigation li{
-	margin:0 10px;
+	margin:0 10px;display:inline-block;
 }
 
 .topNavigation li:hover{
@@ -31,7 +41,10 @@ body,html{
 }
 
 .titleBox h1{
-	color:#FFFFFF;vertical-align: middle;line-height: 300px;font-size: 35px;
+	color:#FFFFFF;padding-top:50px;/*line-height: 300px;*/font-size: 35px;
+}
+.titleBox p{
+	font-size: 20px;color:#FFFFFF;
 }
 .projectList .block{
 	width:33.33%;height: 400px;float:left;box-sizing:border-box; border:15px solid #FFFFFF; overflow-y: hidden; -webkit-transition: background-color 0.5s; transition: background-color 0.7s;
@@ -52,42 +65,71 @@ body,html{
 	background-color:#FBEE4E; color: #222222;
 }
 .projectList .block:hover{
-	background-color:#FFCC99;
+	box-shadow: inset 0 0 0 12px rgba(255,255,255,0.5);transition: 1s;
+}
+.projectList .block:not(:hover){
+	transition: 1s;
 }
 
 .projectList .block#sectionTitle{
 	background-color: darkred; color: #FFFFFF; vertical-align: middle;line-height: 350px;text-align:center;
 }
 .projectList .block .content{
-	padding:20px;position:relative;
+	padding:20px;position:relative;text-align: center;
 }
 
 .projectList .block .content h2,h3{
 	text-align: center;margin:0px;
 }
-.projectList .block .content .projectName{
-	margin-top:120px; 
+
+.projectList .block p,li{
+	font-weight:700;font-size: 30px; 
 }
-.projectList .block .projectRemark{
+.projectList .block .content .projectName{
+	margin-top:120px; position:relative;padding-bottom: 10px;
+}
+.projectList .block p,li,.projectRemark{
 	font-weight:700;font-size: 14px; 
 }
 
 .projectList .block a{
-	color:black;
+	text-decoration: underline;
 }
 
-.projectList .block a:hover{
-	color: darkred;
+.projectList .block .projectIcon{
+	display:inline;
+}
+.projectList .block .projectIcon img{
+	width:80%;position:relative; display:none;border: 3px solid #555555;
 }
 
 .projectList .block .projectDescription{
+	display: none;text-align: left;padding-bottom:5px;
+}
+.projectList .block .projectDescription p{
+	padding-bottom:3px;
+}
+
+.mobile {
 	display: none;
 }
 
-.show {
-	display:block;
+@media screen and (max-width: 768px) {
+	.topNavigation .menu{font-size:20px;}
+	.projectList .block {width:100%;height:450px;border:0px;}
+	.projectList .block .projectIcon img{width:50%;}
+	.titleBox {border:0px;}
+	.projectList .block .content .projectName{margin-top:170px;}
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 479px) {
+	.projectList .block {width:100%;height:400px;}
+	.projectList .block .projectIcon img{width:80%;}
+	.mobile{display: block;float:left;margin: 15px 0px;float:right;}
+	li{margin-right:0px;}
+	.topNavigation .menu{display: none;}
+	.titleBox{height:500px;}
+	.projectList .block .content .projectName{margin-top:140px;}
+	.topNavigation .logo p{margin-left: 0px;}
+	.topNavigation li{margin:0px;}
 }
