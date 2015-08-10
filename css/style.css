@@ -1,5 +1,5 @@
 body,html{
-	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family:Monotype Baskerville W01 Calibri; 
+	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family: 'Architects Daughter', cursive;
 }
 
 a{
@@ -11,11 +11,11 @@ a:hover{
 }
 
 .topNavigation {
-	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;
+	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;max-width:1024px;margin:0 auto;
 }
 
 .topNavigation .logo p{
-	float: left;vertical-align: middle;margin:15px 0px;
+	float: left;vertical-align: middle;margin:15px 0px;margin-left: 30px;
 }
 
 .topNavigation .menu{
@@ -63,7 +63,7 @@ a:hover{
 	background-color:#FBEE4E; color: #222222;
 }
 .projectList .block:hover{
-	background-color:#FFCC99;
+	box-shadow: inset 0 0 0 10px rgba(255,255,255,0.4);
 }
 
 .projectList .block#sectionTitle{
@@ -99,7 +99,7 @@ a:hover{
 }
 
 .projectList .block .projectDescription{
-	display: none;text-align: left;
+	display: none;text-align: left;padding-bottom:5px;
 }
 
 .mobile {
