@@ -1,7 +1,9 @@
 body,html{
 	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family: 'Architects Daughter', cursive;
 }
-
+p{
+	margin:0;padding:0;
+}
 a{
 	text-decoration: none; color:black;
 }
@@ -63,7 +65,10 @@ a:hover{
 	background-color:#FBEE4E; color: #222222;
 }
 .projectList .block:hover{
-	box-shadow: inset 0 0 0 10px rgba(255,255,255,0.4);
+	box-shadow: inset 0 0 0 12px rgba(255,255,255,0.5);transition: 1s;
+}
+.projectList .block:not(:hover){
+	transition: 1s;
 }
 
 .projectList .block#sectionTitle{
@@ -101,6 +106,9 @@ a:hover{
 .projectList .block .projectDescription{
 	display: none;text-align: left;padding-bottom:5px;
 }
+.projectList .block .projectDescription p{
+	padding-bottom:3px;
+}
 
 .mobile {
 	display: none;
@@ -111,14 +119,16 @@ a:hover{
 	.projectList .block {width:100%;height:450px;border:0px;}
 	.projectList .block .projectIcon img{width:50%;}
 	.titleBox {border:0px;}
+	.projectList .block .content .projectName{margin-top:170px;}
 }
 
 @media screen and (max-width: 479px) {
-	.projectList .block {width:100%;height:400px;}
+	.projectList .block {width:100%;height:500px;}
 	.projectList .block .projectIcon img{width:80%;}
 	.mobile{display: block;float:left;margin: 15px 0px;float:right;}
 	li{margin-right:0px;}
 	.topNavigation .menu{display: none;}
 	.titleBox{height:400px;}
+	.projectList .block .content .projectName{margin-top:170px;}
 
 }
