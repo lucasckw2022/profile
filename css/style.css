@@ -125,9 +125,11 @@ a:hover{
 @media screen and (max-width: 479px) {
 	.projectList .block {width:100%;height:400px;}
 	.projectList .block .projectIcon img{width:80%;}
-	.mobile{display: block;float:left;margin: 15px 0px;float:right;}
 	li{margin-right:0px;}
 	.topNavigation .menu{display: none;}
+	.topNavigation .mobile.menu{display: block;margin: 15px 60px; ;}
+	.topNavigation .mobile.menu ul{position:absolute;display:none;right:50px;top:100%;width:100px;}
+	.topNavigation .mobile.menu ul li{display: block;background-color: #FFFFFF; height:40px; text-align: center;padding-top:20px;}
 	.titleBox{height:500px;}
 	.projectList .block .content .projectName{margin-top:140px;}
 	.topNavigation .logo p{margin-left: 0px;}

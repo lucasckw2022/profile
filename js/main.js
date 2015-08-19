@@ -9,4 +9,8 @@ $(document).ready(function(){
 				$(this).find(".projectDescription").fadeOut(400);
 				$(this).find(".projectIcon img").fadeOut(500);
 				});
+			$("ul.mobile.menu").click(function(){
+				$(this).find("ul").slideToggle();
+				});
 			});
+			
