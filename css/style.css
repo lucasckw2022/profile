@@ -13,7 +13,7 @@ a:hover{
 }
 
 .topNavigation {
-	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;max-width:1024px;margin:0 auto;
+	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;max-width:1024px;width:100%;margin:0 auto;
 }
 
 .topNavigation .logo p{
