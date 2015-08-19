@@ -64,7 +64,7 @@ a:hover{
 .projectList .block:nth-child(5n+5){
 	background-color:#FBEE4E; color: #222222;
 }
-.projectList .block:hover{
+.projectList .block.list:hover{
 	box-shadow: inset 0 0 0 12px rgba(255,255,255,0.5);transition: 1s;
 }
 .projectList .block:not(:hover){
