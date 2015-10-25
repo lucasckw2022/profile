@@ -14,6 +14,7 @@
 			$(document).scroll(scrollcount)	
 			$(document).ready(popUp)
 			$(document).ready(mobileMenu)
+			$(document).scroll(scrollToShow)
 			
 			function scrollcount(){
 				i = 2;
@@ -49,4 +50,17 @@
 				});
 			}
 			
+			function scrollToShow(){
+				scrollPosition = $(document).scrollTop();
+				pointToShow = $("#titleBox").position().top - 300;
+				pointToHide = $("#titleBox").position().top + 50;
+				if (scrollPosition >= pointToShow && scrollPosition <= pointToHide){
+					$("#titleBox h1,#titleBox p").fadeIn(500);
+				}
+				else if (scrollPosition <= pointToHide || scrollPosition >= pointToHide){
+					$("#titleBox h1,#titleBox p").fadeOut(500);
+				}
+			}
+
+
 			

@@ -89,17 +89,20 @@ a:hover{
 	padding: 0 50px;
 	color:#012C34;
 	text-align: center;
+
 }
 
 .titleBox h1{
 	padding-top:265px;
 	font-size: 35px;
 	padding-bottom: 30px;
+	display:none;
 }
 .titleBox p{
 	width: 60%;
 	font-size: 20px;
 	margin:0 auto;
+	display:none;
 }
 .projectList{
 	background: rgba(15, 69, 79,0.9);
