@@ -61,7 +61,10 @@ a:hover{
 
 .topNavigation li:hover{
 	text-decoration:underline;
+}
 
+.topNavigation li.active a{
+	color: #DC143C;
 }
 
 .contentBox{

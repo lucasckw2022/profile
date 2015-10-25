@@ -15,6 +15,7 @@
 			$(document).ready(popUp)
 			$(document).ready(mobileMenu)
 			$(document).scroll(scrollToShow)
+			$(document).scroll(scrollHighlight)
 			
 			function scrollcount(){
 				i = 2;
@@ -62,5 +63,18 @@
 				}
 			}
 
+			function scrollHighlight(){
+				scrollPosition = $(document).scrollTop();
+				if (scrollPosition >= $("#titleBox").position().top && 
+					scrollPosition <= $(".background1").position().top){
+					$(".menu li").removeClass("active")
+					$(".menu li:first-child").addClass("active")
+				}
+				else if(scrollPosition >=$("#project").position().top){
+					$(".menu li").removeClass("active")
+					$(".menu li:nth-child(2)").addClass("active")
+				}
+				else ($(".menu li").removeClass("active"))
+			}
 
 			
