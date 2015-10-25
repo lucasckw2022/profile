@@ -1,78 +1,165 @@
 body,html{
-	min-height: 100%; width: 100%; margin: 0; padding: 0; font-family: 'Architects Daughter', cursive;
+	min-height: 100%; 
+	width: 100%; 
+	margin: 0; 
+	padding: 0; 
+	font-family: 'Architects Daughter', cursive;	
 }
+
+body{
+	background: url(../image/background/01.jpg) no-repeat fixed;
+	background-size: cover;
+	transition: background, 0.4s;
+}
+
 p{
-	margin:0;padding:0;
+	margin:0;
+	padding:0;
 }
+
 a{
-	text-decoration: none; color:black;
+	text-decoration: none; 
+	color:black;
+	font-weight: 700;
 }
 
 a:hover{
-	text-decoration: none; color:orange;
+	text-decoration: none; 
+	color:#541712;
 }
 
 .topNavigation {
-	top:0;left:0;right:0;height:50px;position:fixed;background-color: #FFFFFF;padding:0 20px;z-index: 9999;font-size:20px;font-weight:700;max-width:1024px;width:100%;margin:0 auto;
+	top:0;left:0;right:0;
+	height:50px;
+	position:fixed;
+	background-color: #FFFFFF;
+	padding:0 20px;
+	z-index: 9999;
+	font-size:20px;
+	font-weight:700;
+	margin:0 auto;
+	opacity: 0.9;
 }
 
 .topNavigation .logo p{
-	float: left;vertical-align: middle;margin:15px 0px;margin-left: 30px;
+	float: left;
+	vertical-align: middle;
+	margin:15px 0px;
+	margin-left: 30px;
 }
 
 .topNavigation .menu{
-	list-style-type: none;float:right;margin:15px 0px;
+	list-style-type: none;
+	float:right;margin:15px 0px;
 }
 
+
 .topNavigation li{
-	margin:0 10px;display:inline-block;
+	margin:0 10px;
+	display:inline-block;
 }
 
 .topNavigation li:hover{
 	text-decoration:underline;
+
 }
 
 .contentBox{
-	max-width:1024px;margin:0 auto;
+	
+}
+
+.welcome{
+	top: 50px;
+    text-align: center;
+    font-size: 64px;
+    line-height: 750px;
+    color:#012C34;
+
+}
+.background1{
+	height: 200px;
+
 }
 
 .titleBox{
-	background-color: ;height:350px;margin-top:60px; width:100%;box-sizing:border-box;  padding: 0 60px;border:15px solid #FFFFFF; background-color: #222222;
+	background-color: rgb(67, 121, 131);
+	height:700px;
+	margin-top:50px;
+	box-sizing:border-box;  
+	padding: 0 50px;
+	color:#012C34;
+	text-align: center;
 }
 
 .titleBox h1{
-	color:#FFFFFF;padding-top:50px;/*line-height: 300px;*/font-size: 35px;
+	padding-top:265px;
+	font-size: 35px;
+	padding-bottom: 30px;
 }
 .titleBox p{
-	font-size: 20px;color:#FFFFFF;
+	width: 60%;
+	font-size: 20px;
+	margin:0 auto;
+}
+.projectList{
+	background: rgba(15, 69, 79,0.9);
+	width:100%;
+    margin-bottom: 40px;
+    display:table;
 }
 .projectList .block{
-	width:33.33%;height: 400px;float:left;box-sizing:border-box; border:15px solid #FFFFFF; overflow-y: hidden; -webkit-transition: background-color 0.5s; transition: background-color 0.7s;
+	width: 23%;
+    height: 340px;
+    margin: 1%;
+	float:left;
+	box-sizing:border-box;
+	overflow-y: hidden; 
+	color: white;
+	-webkit-transition: background-color 0.5s; 
+	transition: background-color 0.7s;
+	border: 5px;
+	border-image: url(../image/background/diamond_lines_border.png) 16 16 16 stretch;
+	cursor: pointer;
 }
-.projectList .block:nth-child(5n+1){
-	background-color:#FF6633; color: #222222;
+/*.projectList .block:nth-child(3n+1){
+	background-color:#43242C;
+}*/
+.projectList .block:nth-child(3n+2){
+	background-color:#3F3d53; 
 }
-.projectList .block:nth-child(5n+2){
-	background-color:#20D5FB; color: #222222; 
+.projectList .block:nth-child(3n+3){
+	background-color:#5E6874; 
 }
-.projectList .block:nth-child(5n+3){
-	background-color:#B3D49D; color: #222222;
+.projectList .block:nth-child(3n+4){
+	background-color:#43242C; 
 }
-.projectList .block:nth-child(5n+4){
-	background-color:#DE781B; color: #222222;
+.projectList .block ul{
+	    padding: 0 0 0 10px;
 }
-.projectList .block:nth-child(5n+5){
-	background-color:#FBEE4E; color: #222222;
+
+.projectList .block a{
+	    color:white;
+	    text-decoration: none;
+}
+
+.projectList .block a:hover{
+	    color: #541712;
+	    text-decoration: underline;
 }
 .projectList .block.list:hover{
-	box-shadow: inset 0 0 0 12px rgba(255,255,255,0.5);transition: 1s;
+	background-color:rgba(255,255,255,0.5);transition: 1s;
 }
 .projectList .block:not(:hover){
 	transition: 1s;
 }
 
 .projectList .block#sectionTitle{
-	background-color: darkred; color: #FFFFFF; vertical-align: middle;line-height: 350px;text-align:center;
+	background-color: #985051; 
+	color: #FFFFFF; 
+	vertical-align: middle;
+	line-height: 390px;
+	text-align:center;
+	cursor: auto;
 }
 .projectList .block .content{
 	padding:20px;position:relative;text-align: center;
@@ -83,13 +170,13 @@ a:hover{
 }
 
 .projectList .block p,li{
-	font-weight:700;font-size: 30px; 
+	font-size: 30px; 
 }
 .projectList .block .content .projectName{
-	margin-top:120px; position:relative;padding-bottom: 10px;
+	margin-top:90px; position:relative;padding-bottom: 10px;
 }
 .projectList .block p,li,.projectRemark{
-	font-weight:700;font-size: 14px; 
+	font-size: 14px; 
 }
 
 .projectList .block a{
@@ -103,11 +190,33 @@ a:hover{
 	width:80%;position:relative; display:none;border: 3px solid #555555;
 }
 
-.projectList .block .projectDescription{
-	display: none;text-align: left;padding-bottom:5px;
+.projectList .projectDescription{
+	text-align: left;padding: 30px;
 }
-.projectList .block .projectDescription p{
+.projectList .projectDescription p{
 	padding-bottom:3px;
+}
+
+.projectList .popUpFrame{
+	position: fixed;
+	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background: rgba(0, 0, 0, 0.7);
+  	transition: opacity 500ms;
+  	visibility: hidden;
+  	opacity: 0;
+    z-index: 99;
+}
+
+.projectList .popUpContainer{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	width: 500px;
+	height: 550px;
+	position: relative;
+	margin:100px auto;
 }
 
 .mobile {
@@ -116,22 +225,29 @@ a:hover{
 
 @media screen and (max-width: 768px) {
 	.topNavigation .menu{font-size:20px;}
-	.projectList .block {width:100%;height:450px;border:0px;}
+	.projectList .block {width:100%;height:450px;border:0px;margin:0;}
 	.projectList .block .projectIcon img{width:50%;}
+	.welcome {font-size: 60px;}
 	.titleBox {border:0px;}
 	.projectList .block .content .projectName{margin-top:170px;}
-}
-
+	.titleBox {height: 380px;}
+	.titleBox h1 {padding-top: 80px;}
+	.titleBox p {width: 100%}
+	.welcome{line-height: 600px; font-size: 60px;}
+	    
 @media screen and (max-width: 479px) {
-	.projectList .block {width:100%;height:400px;}
+	.projectList .block {width:100%;height:400px;margin:0;}
 	.projectList .block .projectIcon img{width:80%;}
 	li{margin-right:0px;}
+	.welcome{line-height: 600px; font-size: 30px;}
 	.topNavigation .menu{display: none;}
-	.topNavigation .mobile.menu{display: block;margin: 15px 60px; ;}
-	.topNavigation .mobile.menu ul{position:absolute;display:none;right:50px;top:100%;width:100px;}
+	.topNavigation .mobile.menu{display: block;/*margin: 15px 60px; ;*/}
+	.topNavigation .mobile.menu ul{position:absolute;display:none;right:0;top:100%;width:100px;}
 	.topNavigation .mobile.menu ul li{display: block;background-color: #FFFFFF; height:40px; text-align: center;padding-top:20px;}
-	.titleBox{height:500px;}
+	.titleBox{height:580px;}
 	.projectList .block .content .projectName{margin-top:140px;}
 	.topNavigation .logo p{margin-left: 0px;}
 	.topNavigation li{margin:0px;}
+	.projectList .popUpContainer {margin: 75px auto; width: 100%; height: 80%;}
+	.projectList .popUpContainer img{display:none;}
 }
