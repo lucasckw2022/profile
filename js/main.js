@@ -69,7 +69,6 @@
 					scrollPosition <= $(".background1").position().top){
 					$(".menu li").removeClass("active")
 					$(".menu li:first-child").addClass("active")
-					$(".mobile.menu").removeClass("active")
 				}
 				else if(scrollPosition >=$("#project").position().top){
 					$(".menu li").removeClass("active")
