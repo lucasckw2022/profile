@@ -23,13 +23,13 @@
 				checkposition = $(".contentBox > div:nth-child("+ i +")").position().top;
 				scrollPosition = $(document).scrollTop();
 				if (scrollPosition >= checkposition){
-					$("body").css({"background": backgroundImg}).fadeIn(1000);
+					$("body").css({"background": backgroundImg,"background-size":"cover"}).fadeIn(1000);
 					i++
 				}
 				else if (scrollPosition < checkposition){
 					i--;
 					backgroundImg = "url(image/background/0" + i +".jpg) no-repeat fixed"
-					$("body").css({"background": backgroundImg}).fadeIn(1000);
+					$("body").css({"background": backgroundImg,"background-size":"cover"}).fadeIn(1000);
 				}
 			}
 			
