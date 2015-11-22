@@ -17,6 +17,7 @@
 			$(document).scroll(scrollToShow)
 			$(document).scroll(scrollHighlight)
 			
+			//scroll to change background image
 			function scrollcount(){
 				i = 2;
 				backgroundImg = "url(image/background/0" + i +".jpg) no-repeat fixed"
@@ -51,6 +52,7 @@
 				});
 			}
 			
+			//scroll to show/hide Introduction
 			function scrollToShow(){
 				scrollPosition = $(document).scrollTop();
 				pointToShow = $("#titleBox").position().top - 300;
