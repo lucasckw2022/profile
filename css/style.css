@@ -243,6 +243,7 @@ a:hover{
 @media screen and (max-width: 1024px) {
 	.coding{float: none;width: 100%;border-right: none;}
 	.projectManagement{float:none;width:100%;}
+	.projectList .block#sectionTitle{width:98%;}
 }
 
 @media screen and (max-width: 768px) {
