@@ -252,6 +252,7 @@ a:hover{
 	.projectList .block .projectIcon img{width:50%;}
 	.welcome {font-size: 60px;}
 	.titleBox {border:0px;}
+	.projectList .block#sectionTitle{width:100%;}
 	.projectList .block .content .projectName{margin-top:170px;}
 	.titleBox {height: 380px;}
 	.titleBox h1 {padding-top: 80px;}
